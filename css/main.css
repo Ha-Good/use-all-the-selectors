@@ -1,7 +1,4 @@
 html {
-  background-color: #f2f1ed;
-  font-family: georgia, serif;
-  line-height: 1.5;
   box-sizing: border-box;
 }
 
@@ -17,7 +14,7 @@ header, footer {
   font-size: 1.5rem;
 }
 
-nav, ul {
+nav > ul {
   font-family: sans-serif;
 }
 
@@ -37,38 +34,34 @@ nav, ul {
   background-color: #b58900;
 }
 
-strong + .dfn {
+.wrapper > .dfn > strong {
   color: #fff;
 }
 
-li, ol {
-  color: #2aa198;
-}
-
-a.no-highlight {
+a:not(.no-highlight) {
   background-color: #719e07;
 }
 
-[att="val"] a[rel="external"] {
+[rel="external"] {
   background-color: #2694d8;
 }
 
-li:first-child ol {
+ol > li:first-child {
   color: #719e47;
 }
 
-li:last-child ol {
+ol > li:last-child {
   color: #2aa198;
 }
 
-li:nth-child(odd) ol {
+.types > li:nth-child(odd) {
   background-color: #657ba3;
 }
 
-li:nth-child(even) ol {
+.types > li:nth-child(even) {
   background-color: #586e75;
 }
 
-li:nth-child(3n) ol {
+.types > li:nth-child(3n) {
   background-color: #d04b16;
 }
